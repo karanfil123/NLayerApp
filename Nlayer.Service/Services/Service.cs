@@ -39,7 +39,6 @@ namespace Nlayer.Service.Services
         public async Task<bool> AnyAsync(Expression<Func<T, bool>> expression)
         {
            return await _repository.AnyAsync(expression);
-
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()
